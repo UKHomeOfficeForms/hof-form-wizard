@@ -1,16 +1,18 @@
 language: node_js
 node_js:
-  - "4"
-  - "6"
+  - "8"
+  - "9"
+  - "10"
+  - "11"
 
 cache:
   directories:
     - node_modules
 
 before_install:
-  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
+  - if [[ `npm -v` != 6* ]]; then npm i -g npm@6; fi
 
 script: npm run ci
 conditions:
-  branch:master: npm test && npm run snyk-protect
+  branch:master: npm test 
   default: npm test

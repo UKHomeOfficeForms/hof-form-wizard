@@ -4,14 +4,12 @@
   "description": "routing and request handling for a multi-step form processes",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:lint && npm run test:unit && npm run test:check-coverage && npm run test:functional",
+    "test": "npm run test:lint && npm run test:unit && npm run test:check-coverage && npm run test:functional && npm run test:audit",
     "test:lint": "eslint .",
     "test:unit": "istanbul cover _mocha -- --recursive --require test/helpers",
     "test:check-coverage": "istanbul check-coverage --statement 85.53 --branch 81.58 --function 66.67 --line 86.21",
     "test:functional": "funkie mocha ./functional-tests --opts ./functional-tests/mocha.opts --exit",
-    "test:snyk": "snyk test --dev",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect",
+    "test:audit": "npm audit --audit-level=high",
     "ci": "travis-conditions"
   },
   "repository": {
@@ -29,7 +27,7 @@
     "debug": "^2.1.2",
     "deprecate": "^1.0.0",
     "express": "^4.12.2",
-    "hof-form-controller": "^6.0.0",
+    "hof-form-controller": "^6.1.0",
     "hof-model": "^2.0.0",
     "hogan.js": "^3.0.2",
     "i18n-lookup": "^0.1.0",
@@ -56,9 +54,7 @@
     "reqres": "^1.2.0",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
-    "snyk": "^1.14.3",
     "travis-conditions": "0.0.0",
     "webdriverio": "^4.6.2"
-  },
-  "snyk": true
+  }
 }
