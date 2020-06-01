@@ -1,6 +1,6 @@
 {
   "name": "hof-form-wizard",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "routing and request handling for a multi-step form processes",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "debug": "^2.1.2",
     "deprecate": "^1.0.0",
     "express": "^4.12.2",
-    "hof-form-controller": "^6.1.0",
+    "hof-form-controller": "^6.1.2",
     "hof-model": "^2.0.0",
     "hogan.js": "^3.0.2",
     "i18n-lookup": "^0.1.0",
