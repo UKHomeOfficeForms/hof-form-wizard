@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/UKHomeOfficeForms/hof-form-wizard",
   "dependencies": {
+    "chalk": "^2.0.1",
     "csrf": "^3.0.2",
     "debug": "^2.1.2",
     "deprecate": "^1.0.0",

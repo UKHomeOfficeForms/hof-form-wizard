@@ -145,3 +145,5 @@ app.use(Wizard({
 }, {}, {}));
 ```
 
+* `debug` - if applied to a step then debugging information will be output to the console through the request pipeline. The debug output can be filtered by setting a `HOF_DEBUG` environment variable. e.g. to output debug information only for POST requests, set the debug environment to `hof-debug:post`.
+
